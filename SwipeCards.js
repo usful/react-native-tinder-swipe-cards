@@ -58,29 +58,7 @@ let currentIndex = {};
 let guid = 0;
 
 export default class SwipeCards extends Component {
-
-  static propTypes = {
-    cards: React.PropTypes.array,
-    cardKey: React.PropTypes.string,
-    loop: React.PropTypes.bool,
-    stack: React.PropTypes.bool,
-    stackGuid: React.PropTypes.string,
-    stackDepth: React.PropTypes.number,
-    stackOffsetX: React.PropTypes.number,
-    stackOffsetY: React.PropTypes.number,
-    paddingTop: React.PropTypes.number,
-    swipeStartThreshold: React.PropTypes.number,
-    showYup: React.PropTypes.bool,
-    showNope: React.PropTypes.bool,
-    handleYup: React.PropTypes.func,
-    handleNope: React.PropTypes.func,
-    renderCard: React.PropTypes.func,
-    renderNoMoreCards: React.PropTypes.func,
-    cardRemoved: React.PropTypes.func,
-    yupText: React.PropTypes.string,
-    noText: React.PropTypes.string
-  };
-
+  
   static defaultProps = {
     cards: [],
     cardKey: 'key',
